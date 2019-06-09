@@ -4,13 +4,10 @@ import binascii
 from base64 import b64decode
 from test import support
 import unittest
-from ch01 import convert_hex_to_base64
-from ch02 import xor_two_strings
-from ch03 import chi_squared, bruteforce, not_so_good_freq
-from ch05 import repeating_xor
-from ch06 import simulation, hamming_distance, transpose
-from ch07 import aes_ecb_decrypt, unpadpkcs7
-from ch08 import probably_ecb
+from . import convert_hex_to_base64, xor_two_strings, chi_squared,\
+    bruteforce, not_so_good_freq, repeating_xor, simulation, hamming_distance,\
+    transpose, aes_ecb_decrypt, unpadpkcs7, probably_ecb
+
 from collections import Counter
 
 
@@ -33,7 +30,7 @@ class Set1(unittest.TestCase):
 
     def test_ch4(self):
         l = []
-        with open("4.txt") as myfile:
+        with open("static/4.txt") as myfile:
             f = myfile.read()
             for line in f.splitlines():
                 for result, i in bruteforce(line):
@@ -46,7 +43,7 @@ class Set1(unittest.TestCase):
         self.assertEqual(binascii.hexlify(repeating_xor(f, "ICE")), r)
 
     def test_ch6(self):
-        with open("6.txt", "r") as myfile:
+        with open("static/6.txt", "r") as myfile:
             cipher = b64decode(myfile.read())
 
         self.assertEqual(hamming_distance("this is a test", "wokka wokka!!!"), 37)
@@ -68,13 +65,13 @@ class Set1(unittest.TestCase):
 
         
     def test_ch7(self):        
-        with open("7.txt", "r") as myfile:
+        with open("static/7.txt", "r") as myfile:
             cipher = b64decode(myfile.read())
         out = unpadpkcs7(aes_ecb_decrypt(cipher, "YELLOW SUBMARINE"))
         self.assertEqual(out, self.poem)
 
     def test_ch8(self):
-        with open("8.txt", "r") as myfile:
+        with open("static/8.txt", "r") as myfile:
             lines = myfile.read().splitlines()
         for line in lines:
             if probably_ecb(binascii.unhexlify(line)):

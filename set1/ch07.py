@@ -10,5 +10,5 @@ def unpadpkcs7(s):
     return s[0:-i]
 
 def aes_ecb_decrypt(cipher, key):
-    aes = AES.new(key, AES.MODE_ECB, "\x00" * 16)
+    aes = AES.new(key, AES.MODE_ECB)
     return aes.decrypt(cipher)
