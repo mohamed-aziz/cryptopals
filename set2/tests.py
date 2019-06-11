@@ -24,8 +24,8 @@ class Set2(unittest.TestCase):
     def test_ch9(self):
         result = paddpkcs7("YELLOW SUBMARINE", 20)
         self.assertEqual(result, "YELLOW SUBMARINE\x04\x04\x04\x04")
-        result = paddpkcs7("YELLOW SUBMARINE HEH", 20)
-        self.assertEqual(result, "YELLOW SUBMARINE HEH")
+        result = paddpkcs7("YELLOW SUBMARINE", 16)
+        self.assertEqual(result, "YELLOW SUBMARINE" + "\x10" * 16)
 
     def test_ch10(self):
         with open("static/10.txt", "r") as myfile:
