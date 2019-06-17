@@ -1,8 +1,7 @@
 from set2 import aes_cbc_decrypt, aes_cbc_encrypt, paddpkcs7, validatepkcs7, split_blocks
-from set1 import unpadpkcs7
 from Crypto import Random
 from Crypto.Util.strxor import strxor
-import binascii
+
 
 def get_block(text, block, blocksize):
     return split_blocks(text, blocksize)[block]
@@ -26,7 +25,7 @@ def break_cbc_padding_oracle(oracle, ciphertext, blocksize=16):
     prefix = ""
     for block_counter in range(1, len(split_blocks(ciphertext, blocksize))):
         current_block = get_block(ciphertext, block_counter, blocksize)
-        last_block    = get_block(ciphertext, block_counter-1, blocksize)
+        last_block = get_block(ciphertext, block_counter-1, blocksize)
         for j in range(blocksize-1, -1, -1):
             for i in range(255)[::-1]:
                 guessed_block = strxor(last_block,
