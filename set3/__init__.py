@@ -1,4 +1,4 @@
-from .ch17 import produce_ciphertext, break_cbc_padding_oracle, cbc_padding_oracle
+from .ch17 import produce_ciphertext, break_cbc_padding_oracle, cbc_padding_oracle, get_block
 
 from .ch18 import aes_ctr_encrypt_block, aes_ctr_encrypt_decrypt, aes_ctr_produce_blocks, form_nonce
 from .ch19 import break_ctr_reused_nonce_substitutions
