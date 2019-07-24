@@ -4,14 +4,68 @@
    My WIP of [[https://cryptopals.com/][cryptopals]].
 
   
-*** State [3/8]
-    - [X] Set1
-    - [X] Set2
-    - [X] Set3
-    - [ ] Set4
-    - [ ] Set5
-    - [ ] Set6
-    - [ ] Set7
-    - [ ] Set8
-
-  
+*** Challs [26/64]
+    - [X] Challenge 1
+    - [X] Challenge 2
+    - [X] Challenge 3
+    - [X] Challenge 4
+    - [X] Challenge 5
+    - [X] Challenge 6
+    - [X] Challenge 7
+    - [X] Challenge 8
+    - [X] Challenge 9
+    - [X] Challenge 10
+    - [X] Challenge 11
+    - [X] Challenge 12
+    - [X] Challenge 13
+    - [X] Challenge 14
+    - [X] Challenge 15
+    - [X] Challenge 16
+    - [X] Challenge 17
+    - [X] Challenge 18
+    - [ ] Challenge 19
+    - [ ] Challenge 20
+    - [X] Challenge 21
+    - [X] Challenge 22
+    - [X] Challenge 23
+    - [X] Challenge 24
+    - [X] Challenge 25
+    - [X] Challenge 26
+    - [X] Challenge 27
+    - [X] Challenge 28
+    - [ ] Challenge 29
+    - [ ] Challenge 30
+    - [ ] Challenge 31
+    - [ ] Challenge 32
+    - [ ] Challenge 33
+    - [ ] Challenge 34
+    - [ ] Challenge 35
+    - [ ] Challenge 36
+    - [ ] Challenge 37
+    - [ ] Challenge 38
+    - [ ] Challenge 39
+    - [ ] Challenge 40
+    - [ ] Challenge 41
+    - [ ] Challenge 42
+    - [ ] Challenge 43
+    - [ ] Challenge 44
+    - [ ] Challenge 45
+    - [ ] Challenge 46
+    - [ ] Challenge 47
+    - [ ] Challenge 48
+    - [ ] Challenge 49
+    - [ ] Challenge 50
+    - [ ] Challenge 51
+    - [ ] Challenge 52
+    - [ ] Challenge 53
+    - [ ] Challenge 54
+    - [ ] Challenge 55
+    - [ ] Challenge 56
+    - [ ] Challenge 57
+    - [ ] Challenge 58
+    - [ ] Challenge 59
+    - [ ] Challenge 60
+    - [ ] Challenge 61
+    - [ ] Challenge 62
+    - [ ] Challenge 63
+    - [ ] Challenge 64
