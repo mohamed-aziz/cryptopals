@@ -19,10 +19,10 @@ def hamming_distance(s1, s2):
 
 
 def find_keysize(cipher, keysize):
-    blocknum = randint(1, 40)
-    blocknum2 = randint(1, 40)
+    blocknum = randint(1, 5)
+    blocknum2 = randint(1, 5)
     if blocknum2 == blocknum:
-        blocknum2 = randint(1, 40)
+        blocknum2 = randint(1, 5)
     block1, block2 = cipher[keysize*(blocknum-1):keysize*blocknum], cipher[keysize*(blocknum2-1):keysize*(blocknum2)]
     return float(hamming_distance(block1, block2)) / keysize
 
